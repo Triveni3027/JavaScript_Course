@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>JS UI</title>
+</head>
+<body id="body">
+    <script>
+      function create(){
+      var divRef =  document.createElement('div') //<div></div>
+      var h2Ref = document.createElement('h2')// <h2></h2>
+      var pRef = document.createElement('p')//<p></p>
+
+      h2Ref.innerText = "Js Element" //insert the data into heading tag eg: <h2>Js Element</h2>
+      pRef.innerText = "JS is a programing language ,we can do DOM manipulation."//here same <p>JS is.....</p>
+      divRef.appendChild(h2Ref)//here we add the h2 tag inside the div
+      divRef.appendChild(pRef)// here we can add the paragraph tag inside the div
+
+      document.getElementById('body').appendChild(divRef)//all elements access by using body id
+      }
+      create() //calling the function then web page will bw loaded
+      create()
+    </script>
+</body>
+</html>

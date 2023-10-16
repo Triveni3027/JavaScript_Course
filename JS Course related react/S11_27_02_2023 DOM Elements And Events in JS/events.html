@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Events</title>
+    <script>
+        function fn(){
+            var btnRef = document.getElementById("btn")
+            btnRef.innerText = "Changed the content"
+        }
+        function f1(){
+            var btnRef = document.getElementById("btn")
+            btnRef.style.color = "red"
+            btnRef.style.padding = "50px"
+        }
+        function f2(){
+            var btnRef = document.getElementById("btn")
+            btnRef.style.color = "black"
+            btnRef.style.padding = "0px"
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fn()" onmouseleave= "f2()" onmouseenter="f1()" onmouseleave= "f2()" id="btn">Events in JS</button>
+</body>
+</html>
